@@ -1,4 +1,49 @@
+@import url("rsds-colors.css");
+@import url("rsds-layout.css");
+
+:root {
+}
 body {
-  background: #fff;
-  color: black;
+  background: var(--rsds-ct-foreground);
+  color: var(--rsds-ct-background);
+  color: var(--testcolor);
+  margin: 0;
+}
+
+.grid--s1 {
+  display: grid;
+  grid-template-columns: var(--rsds-grid--s1);
+  column-gap: var(--rsds-grid-gap--s1);
+}
+
+section.hero {
+  /* var ska jag vara i min förälder? jo, jag ska spänna över hela sidan */
+  grid-column: 1 / -1;
+  min-height: 50dvh;
+  background: #00ff0040;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* hur ska jag hantera mina barn */
+  display: grid;
+  grid-template-columns: var(--rsds-grid--s1);
+  column-gap: var(--rsds-grid-gap--s1);
+
+  & * {
+    grid-column: 2 / -2;
+    background: #00ff0040;
+    padding-block: 3rem;
+  }
+}
+section.page {
+  grid-column: 1 / -1;
+  main {
+    grid-column: 2 / 8;
+  }
+}
+.ruler {
+  grid-column: 1 / 2;
+  background:red;
+  padding-block:2rem;
 }

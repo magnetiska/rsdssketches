@@ -1,0 +1,33 @@
+:root {
+    --testcolor: #f07;
+ --rsds-grid-gap--s1: 1.5rem;
+ --rsds-grid-col-max: 4.875rem;
+
+  --rsds-grid-col: minmax(.0625rem, var(--rsds-grid-col-max));
+  --rsds-grid-col-first: minmax(.5rem, 1fr);
+  --rsds-grid-col-last: minmax(.5rem, 1fr);
+
+    --rsds-grid--s2: [x]1fr [a] var(--rsds-grid-col) [b] var(--rsds-grid-col) [c] var(--rsds-grid-col) [d] 1fr [z];
+
+
+  /* prettier-ignore */
+  --rsds-grid--s1:
+  [vp-start] var(--rsds-grid-col-first)
+  [a] var(--rsds-grid-col)
+  [b] var(--rsds-grid-col)
+  [c header-start footer-start] var(--rsds-grid-col)
+  [d meta-end main-start] var(--rsds-grid-col)
+
+  [e] var(--rsds-grid-col)
+  [f] var(--rsds-grid-col)
+  [g] var(--rsds-grid-col)
+  [h] var(--rsds-grid-col)
+
+  [i] var(--rsds-grid-col)
+  [j] var(--rsds-grid-col)
+  [k] var(--rsds-grid-col)
+  [l page-end header-end footer-end] var(--rsds-grid-col)
+  [n] var(--rsds-grid-col-last)
+  [vp-end] ;
+
+}
