@@ -4,16 +4,28 @@
 :root {
 }
 body {
-  background: var(--rsds-ct-foreground);
-  color: var(--rsds-ct-background);
-  color: var(--testcolor);
+  color: var(--rsds-ct-foreground);
+  background: var(--rsds-ct-background);
   margin: 0;
+  font-family: "Public Sans";
+  line-height: 1.5rem;
 }
 
 .grid--s1 {
   display: grid;
   grid-template-columns: var(--rsds-grid--s1);
   column-gap: var(--rsds-grid-gap--s1);
+}
+
+.grid--p1 {
+  display: grid;
+  grid-template-columns: var(--rsds-grid--p1);
+  column-gap: var(--rsds-grid-gap--p1);
+
+  .tool {grid-column:  span 3 / -1;
+  background:#c0c0c0;
+padding:1.5rem;
+}
 }
 
 section.hero {
@@ -40,6 +52,9 @@ section.page {
   grid-column: 1 / -1;
   main {
     grid-column: 2 / 8;
+  }
+  aside {
+    grid-column: 8 / span 5;
   }
 }
 .ruler {
