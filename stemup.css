@@ -1,0 +1,62 @@
+.hero-venutian {
+ background:black !important;
+ position: relative;
+ height: 50vh;
+ width:100vw;
+ overflow: hidden;
+ 
+}
+svg.venutian {
+  stroke: #0cf;
+  stroke-width: .1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  width: 100%;
+  grid-column: 1 / -1;
+
+  animation-name: venutian-zoom;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+path.venutian-dot {
+  stroke: orange;
+  stroke-width: 8;
+  animation-name: anim-dot;
+  animation-duration: 120s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes venutian-zoom{
+  0% {
+  stroke-width: .02;
+  transform: scale(8) rotate(0) translateX(25%);
+     }
+  100% {
+  stroke-width: .16;
+  transform: scale(1) rotate(360deg) translateX(-25%) ;
+    
+  }
+}
+
+@keyframes anim-dot {
+  0% {
+    stroke-dashoffset: -12000;
+    stroke-dasharray: .1 12000;
+  }
+  100% {
+    stroke-dashoffset: 12000;
+    stroke-dasharray: .1 12000;
+  }
+}
