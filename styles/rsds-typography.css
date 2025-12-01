@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
+  /* should the values inside this declaraion be in another file? */
 
   /* lengths */
   --rsds-l-1g: 0.75rem;
@@ -23,63 +24,70 @@
   --lh: 1.5rem;
   --lh1: 2.25rem;
   --lh2: 3rem;
-
-  --ts-1: .75rem;
-  --ts: 1rem;
-  --ts1: 1.125rem;
-  --ts2: 1.25rem;
-  --ts3: 1.5rem;
-  --ts4: 2rem;
-  --ts5: 2.25rem;
-  --ts6: 2.75rem;
-
-  /* sizes and lineheights for headings */
-
-  --rsds-fs-h-5xl: 2.75rem;
-  --rsds-lh-h-5xl: 3rem;
-
-  --rsds-fs-h-4xl: 2.25rem;
-  --rsds-lh-h-4xl: 2.25rem;
-
-  --rsds-fs-h-3xl: 2rem;
-  --rsds-lh-h-3xl: 2.25rem;
-
-  --rsds-fs-h-2xl: 1.5rem;
-  --rsds-lh-h-2xl: 1.5rem;
-
-  --rsds-fs-h-xl: 1.25rem;
-  --rsds-lh-h-xl: 1.5rem;
-
-  --rsds-fs-h-l: 1.125rem;
-  --rsds-lh-h-l: 1.5rem;
-
-  --rsds-fs-h-base: 1rem;
-  --rsds-lh-h-base: 1.5rem;
-
-  /* size and lineheight for large text */
-
-  --rsds-fs-t-l: 1.125rem;
-  --rsds-lh-t-l: 1.5rem;
-
-/* size and lineheight for normal text */
-
-  --rsds-fs-t-base: 1rem;
-  --rsds-lh-t-base: 1.5rem;
-
-/* size and lineheight for small text */
-  --rsds-fs-t-s: 0.75rem;
-  --rsds-lh-t-s: 1rem;
 }
 
+:root {
+  --rsds-ff: "Public Sans", sans-serif;
+  --rsds-ff-alt: "Literata", serif;
+  --rsds-ff-heading: var(--rsds-ff);
+  --rsds-fw-heading: 700;
+}
+
+:root {
+  /* font-sizes and line-heights  */
+
+  --rsds-fs-5xl: 2.75rem;
+  --rsds-lh-5xl: 3rem;
+
+  --rsds-fs-4xl: 2rem;
+  --rsds-lh-4xl: 2.25rem;
+
+  --rsds-fs-3xl: 1.75rem;
+  --rsds-lh-3xl: 2.25rem;
+
+  --rsds-fs-2xl: 1.375rem;
+  --rsds-lh-2xl: 1.5rem;
+
+  --rsds-fs-xl: 1.25rem;
+  --rsds-lh-xl: 1.5rem;
+
+  --rsds-fs-l: 1.125rem;
+  --rsds-lh-l: 1.5rem;
+
+  --rsds-fs-base: 1rem;
+  --rsds-lh-base: 1.5rem;
+
+  --rsds-fs-s: 0.75rem;
+  --rsds-lh-s: 1rem;
+
+  --rsds-fs-s: 0.625rem;
+  --rsds-lh-s: 0.75rem;
+}
+/* typographical patterns: mixed things */
+:root {
+     --rsds-text-preamble: 400 var(--rsds-fs-l)/var(--rsds-lh-l) inherit;
+}
+
+/* typographical patterns: headings */
+:root {
+
+    --rsds-text-heading-xs: var(--rsds-fw-heading) var(--rsds-fs-xs)/var(--rsds-lh-xs) var(--rsds-ff-heading);
+    --rsds-text-heading-s: var(--rsds-fw-heading) var(--rsds-fs-s)/var(--rsds-lh-s) var(--rsds-ff-heading);
+    --rsds-text-heading-base: var(--rsds-fw-heading) var(--rsds-fs-base)/var(--rsds-lh-base) var(--rsds-ff-heading);
+    --rsds-text-heading-l: var(--rsds-fw-heading) var(--rsds-fs-l)/var(--rsds-lh-l) var(--rsds-ff-heading);
+    --rsds-text-heading-xl: var(--rsds-fw-heading) var(--rsds-fs-xl)/var(--rsds-lh-xl) var(--rsds-ff-heading);
+    --rsds-text-heading-2xl: var(--rsds-fw-heading) var(--rsds-fs-2xl)/var(--rsds-lh-2xl) var(--rsds-ff-heading);
+    --rsds-text-heading-3xl: var(--rsds-fw-heading) var(--rsds-fs-3xl)/var(--rsds-lh-3xl) var(--rsds-ff-heading);
+    --rsds-text-heading-4xl: var(--rsds-fw-heading) var(--rsds-fs-4xl)/var(--rsds-lh-4xl) var(--rsds-ff-heading);
+    --rsds-text-heading-5xl: var(--rsds-fw-heading) var(--rsds-fs-5xl)/var(--rsds-lh-5xl) var(--rsds-ff-heading);
+}
 
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: var(--rsds-ff);
 }
 
-
 .rsds-typo {
-
-  font-family: "Literata", serif; 
+  font-family: var(--rsds-ff-alt);
 
   h1,
   h2,
@@ -87,9 +95,7 @@ body {
   h4,
   h5,
   h6 {
-    font-family: "Public Sans", sans-serif;
-    font-weight: bold;
-    margin:0;
+    margin: 0;
   }
 
   h1:not(:first-child),
@@ -112,53 +118,48 @@ body {
 
   /* preamble 
     maybe the automatic styling (h1 + p) hould be disabled in favor of a class? 
-  */ 
-  
+  */
   h1 + p,
   .preamble {
-    font-size: var(--rsds-fs-t-l);
-    line-height: var(--rsds-lh-t-l);
+    font: var(--rsds-text-preamble);
   }
 
   /* headings */
 
   h1 {
-    font-size: var(--rsds-fs-h-5xl);
-    line-height: var(--rsds-lh-h-5xl);
-  
+    font: var(--rsds-text-heading-5xl);
     margin-block-end: var(--rsds-sp-inside);
   }
 
   h2 {
-    font-size: var(--rsds-fs-h-3xl);
-    line-height: var(--rsds-lh-h-3xl);
+    font: var(--rsds-text-heading-4xl);
+    margin-block-end: var(--rsds-sp-inside);
   }
 
   h3 {
-    font-size: var(--rsds-fs-h-2xl);
-    line-height: var(--rsds-lh-h-2xl);
+    font: var(--rsds-text-heading-2xl);
+    margin-block-end: var(--rsds-sp-inside);
   }
- 
+
   h4 {
-    font-size: var(--rsds-fs-h-xl);
-    line-height: var(--rsds-lh-h-xl);
+    font: var(--rsds-text-heading-xl);
+    margin-block-end: var(--rsds-sp-inside);
   }
 
   h5 {
-    font-size: var(--rsds-fs-h-l);
-    line-height: var(--rsds-lh-h-l);
+    font: var(--rsds-text-heading-l);
+    margin-block-end: var(--rsds-sp-inside);
   }
- 
+
   h6 {
-    font-size: var(--rsds-fs-h-base);
-    line-height: var(--rsds-lh-h-base);
+    font: var(--rsds-text-heading-base);
+    margin-block-end: var(--rsds-sp-inside);
   }
 
   &.rsds-typo--hdepth-dynamic:has(h2),
   &.rsds-typo--hdepth-2 {
+    background: hsl(240, 100%, 90%);
 
-    background:hsl(240, 100%, 90%);
-  
     h2 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
@@ -166,22 +167,22 @@ body {
       font-size: var(--rsds-fs-h-xl);
       line-height: var(--rsds-lh-h-xl);
     }
-  
+
     h3 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-   
+
     h4 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-  
+
     h5 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-   
+
     h6 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
@@ -190,29 +191,28 @@ body {
 
   &.rsds-typo--hdepth-dynamic:has(h3),
   &.rsds-typo--hdepth-3 {
+    background: hsl(180, 100%, 90%);
 
-  background:hsl(180, 100%, 90%);
-  
     h2 {
       font-size: var(--rsds-fs-h-3xl);
       line-height: var(--rsds-lh-h-3xl);
     }
-  
+
     h3 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-   
+
     h4 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-  
+
     h5 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-   
+
     h6 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
@@ -221,29 +221,28 @@ body {
 
   &.rsds-typo--hdepth-dynamic:has(h4),
   &.rsds-typo--hdepth-4 {
+    background: hsl(120, 100%, 90%);
 
-  background:hsl(120, 100%, 90%);
-  
     h2 {
       font-size: var(--rsds-fs-h-3xl);
       line-height: var(--rsds-lh-h-3xl);
     }
-  
+
     h3 {
       font-size: var(--rsds-fs-h-xl);
       line-height: var(--rsds-lh-h-xl);
     }
-   
+
     h4 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-  
+
     h5 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
     }
-   
+
     h6 {
       font-size: var(--rsds-fs-h-base);
       line-height: var(--rsds-lh-h-base);
@@ -252,70 +251,66 @@ body {
 
   &.rsds-typo--hdepth-dynamic:has(h5),
   &.rsds-typo--hdepth-5 {
+    background: hsl(60, 100%, 90%);
 
-  background:hsl(60, 100%, 90%);
-  
     h2 {
-      font-size: var(--rsds-fs-h-3xl);
-      line-height: var(--rsds-lh-h-3xl);
+        font: var(--rsds-text-heading-3xl);
     }
-  
+
     h3 {
-      font-size: var(--rsds-fs-h-xl);
-      line-height: var(--rsds-lh-h-xl);
-    }
-   
+    font: var(--rsds-text-heading-xl);
+
+   }
+
     h4 {
-      font-size: var(--rsds-fs-h-l);
-      line-height: var(--rsds-lh-h-l);
-    }
-  
+        font: var(--rsds-text-heading-l);
+        }
+
     h5 {
-      font-size: var(--rsds-fs-h-base);
-      line-height: var(--rsds-lh-h-base);
+          font: var(--rsds-text-heading-base);
     }
-   
+
     h6 {
-      font-size: var(--rsds-fs-h-base);
-      line-height: var(--rsds-lh-h-base);
+          font: var(--rsds-text-heading-s);
     }
   }
-
 
   &.rsds-typo--hdepth-dynamic:has(h6),
   &.rsds-typo--hdepth-6 {
+    background: hsl(0, 100%, 90%);
 
-  background:hsl(0, 100%, 90%);  
-  
+    h1 {
+        font: var(--rsds-text-heading-5xl);
+        margin-block-end: var(--rsds-sp-inside);
+    }
+
     h2 {
-      font-size: var(--rsds-fs-h-3xl);
-      line-height: var(--rsds-lh-h-3xl);
+        font: var(--rsds-text-heading-4xl);
+        margin-block-end: var(--rsds-sp-inside);
     }
-  
+
     h3 {
-      font-size: var(--rsds-fs-h-2xl);
-      line-height: var(--rsds-lh-h-2xl);
+        font: var(--rsds-text-heading-2xl);
+        margin-block-end: var(--rsds-sp-inside);
     }
-   
+
     h4 {
-      font-size: var(--rsds-fs-h-xl);
-      line-height: var(--rsds-lh-h-xl);
+        font: var(--rsds-text-heading-xl);
+        margin-block-end: var(--rsds-sp-inside);
     }
-  
+
     h5 {
-      font-size: var(--rsds-fs-h-l);
-      line-height: var(--rsds-lh-h-l);
+        font: var(--rsds-text-heading-l);
+        margin-block-end: var(--rsds-sp-inside);
     }
-   
+
     h6 {
-      font-size: var(--rsds-fs-h-base);
-      line-height: var(--rsds-lh-h-base);
+        font: var(--rsds-text-heading-base);
+        margin-block-end: var(--rsds-sp-inside);
     }
   }
-
 
   ul ul {
     margin-block-start: 0;
   }
 }
-

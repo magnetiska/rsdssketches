@@ -8,8 +8,6 @@ body {
   color: var(--rsds-ct-foreground);
   background: var(--rsds-ct-background);
   margin: 0;
-  font-family: "Public Sans";
-  line-height: 1.5rem;
 }
 
 .grid--s1 {
@@ -60,6 +58,6 @@ section.page {
 }
 .ruler {
   grid-column: 1 / 2;
-  background:red;
+  background: #ff000080;
   padding-block:2rem;
 }
