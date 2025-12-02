@@ -65,7 +65,7 @@
 }
 /* typographical patterns: mixed things */
 :root {
-     --rsds-text-preamble: 400 var(--rsds-fs-l)/var(--rsds-lh-l) inherit;
+     --rsds-text-preamble: 400 var(--rsds-fs-l)/var(--rsds-lh-l) var(--rsds-ff);
 }
 
 /* typographical patterns: headings */
@@ -87,7 +87,9 @@ body {
 }
 
 .rsds-typo {
-  font-family: var(--rsds-ff-alt);
+  --rsds-ff: var(--rsds-ff-alt);
+  --rsds-ff: "Literata", serif;
+  font-family: var(--rsds-ff);
 
   h1,
   h2,

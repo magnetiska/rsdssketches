@@ -56,8 +56,4 @@ section.page {
     grid-column: 8 / span 5;
   }
 }
-.ruler {
-  grid-column: 1 / 2;
-  background: #ff000080;
-  padding-block:2rem;
-}
+
