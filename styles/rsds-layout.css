@@ -3,6 +3,7 @@
     --testcolor: #f07;
  --rsds-grid-gap--p1: 1.5rem;
  --rsds-grid-gap--s1: 1.5rem;
+ --rsds-grid-gap--s1: 0;
  --rsds-grid-col-max: 4.875rem;
 
   --rsds-grid-col: minmax(.0625rem, var(--rsds-grid-col-max));
@@ -56,4 +57,7 @@
 }
 .demo {
   background: #ff007740;
+  border-inline: 1px solid #ff007780;
+  box-sizing: border-box;
+  text-align: center;
 }

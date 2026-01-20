@@ -89,7 +89,6 @@ body {
 .rsds-typo {
   --rsds-ff: var(--rsds-ff-alt);
   --rsds-ff: "Literata", serif;
-  font-family: var(--rsds-ff);
 
   h1,
   h2,
