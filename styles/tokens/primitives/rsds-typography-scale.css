@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* spacing scale */
+:root {
+
+    --rsds_ref_font-size_base: 1rem;
+    --rsds_ref_line-height_base: 1.5rem;
+
+    --rsds_ref_font-weight_regular: regular;
+    --rsds_ref_font-weight_bold: bold;
+
+    --rsds_ref_font-family_main: "Public Sans", sans-serif;
+
+}
+

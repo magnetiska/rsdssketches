@@ -1,0 +1,66 @@
+:root {
+
+  /* Brand colours */
+  --rsds_ref_ink_cream: hsla(50, 86%, 94%, 1);
+  --rsds_ref_ink_sea: hsla(191, 49%, 37%, 1);
+  --rsds_ref_ink_yellow: rgba(253, 211, 47, 1);
+  --rsds_ref_ink_red: rgba(228, 1, 53, 1);
+  --rsds_ref_ink_earth: rgba(95, 82, 54, 1);
+
+  /* Våra "Tweaks" */
+  --rsds_ref_ink_red--bright: rgba(255, 26, 78, 1);
+  --rsds_ref_ink_sea--dark: rgba(34, 87, 99, 1);
+  --rsds_ref_ink_sea--darker: rgba(2, 58, 71, 1);
+  --rsds_ref_ink_sea--bright: rgba(130, 214, 233, 1);
+  --rsds_ref_ink_sea--brighter: rgba(168, 252, 255, 1);
+  --rsds_ref_ink_sea--brightest: rgba(207, 255, 255, 1);
+  --rsds_ref_ink_saphire: rgba(1, 87, 173, 1);
+  --rsds_ref_ink_saphire--medium: rgba(1, 116, 233, 1);
+  --rsds_ref_ink_saphire--bright: rgba(98, 176, 254, 1);
+  --rsds_ref_ink_saphire--bright-alpha: rgba(98, 176, 254, 0.33);
+  --rsds_ref_ink_grey--800: rgba(32, 32, 32, 1);
+  --rsds_ref_ink_grey--darken-87: rgba(0, 0, 0, 0.87);
+  --rsds_ref_ink_grey--700: rgba(64, 64, 64, 1);
+  --rsds_ref_ink_grey--650: rgba(80, 80, 80, 1);
+  --rsds_ref_ink_grey--600: rgba(96, 96, 96, 1);
+  --rsds_ref_ink_grey--500: rgba(112, 112, 112, 1);
+  --rsds_ref_ink_grey--darken-60: rgba(0, 0, 0, 0.6);
+  --rsds_ref_ink_grey--400: rgba(128, 128, 128, 1);
+  --rsds_ref_ink_grey--300: rgba(160, 160, 160, 1);
+  --rsds_ref_ink_grey--200: rgba(192, 192, 192, 1);
+  --rsds_ref_ink_grey--175: rgba(208, 208, 208, 1);
+  --rsds_ref_ink_grey--150: rgba(224, 224, 224, 1);
+  --rsds_ref_ink_grey--darken-12: rgba(0, 0, 0, 0.1216);
+  --rsds_ref_ink_grey--darken-6: rgba(0, 0, 0, 0.0588);
+  --rsds_ref_ink_grey--100: rgba(240, 240, 240, 1);
+  --rsds_ref_ink_grey--lighten-38: rgba(255, 255, 255, 0.3765);
+  --rsds_ref_ink_grey--lighten-25: rgba(255, 255, 255, 0.25);
+
+  /* Inera palette for illustrations i RSDS */
+  --rsds_ref_ink_1177-sky-dark: rgba(59, 66, 102, 1);
+  --rsds_ref_ink_1177-sky-base: rgba(57, 98, 145, 1);
+  --rsds_ref_ink_1177-sky-clear: rgba(0, 151, 227, 1);
+  --rsds_ref_ink_1177-sky-line: rgba(198, 210, 223, 1);
+  --rsds_ref_ink_1177-sky-background: rgba(241, 241, 245, 1);
+  --rsds_ref_ink_1177-grass-dark: rgba(57, 84, 40, 1);
+  --rsds_ref_ink_1177-grass-base: rgba(65, 144, 2, 1);
+  --rsds_ref_ink_1177-grass-clear: rgba(111, 187, 43, 1);
+  --rsds_ref_ink_1177-grass-line: rgba(207, 222, 191, 1);
+  --rsds_ref_ink_1177-grass-background: rgba(238, 248, 238, 1);
+  --rsds_ref_ink_1177-plum-dark: rgba(89, 36, 76, 1);
+  --rsds_ref_ink_1177-plum-base: rgba(169, 66, 139, 1);
+  --rsds_ref_ink_1177-plum-clear: rgba(244, 115, 159, 1);
+  --rsds_ref_ink_1177-plum-line: rgba(245, 201, 216, 1);
+  --rsds_ref_ink_1177-plum-background: rgba(246, 238, 246, 1);
+  --rsds_ref_ink_1177-sun-dark: rgba(117, 38, 12, 1);
+  --rsds_ref_ink_1177-sun-base: rgba(250, 129, 0, 1);
+  --rsds_ref_ink_1177-sun-clear: rgba(255, 193, 0, 1);
+  --rsds_ref_ink_1177-sun-line: rgba(255, 230, 153, 1);
+  --rsds_ref_ink_1177-sun-background: rgba(255, 248, 224, 1);
+  --rsds_ref_ink_1177-stone-dark: rgba(53, 53, 53, 1);
+  --rsds_ref_ink_1177-stone-base: rgba(99, 100, 102, 1);
+  --rsds_ref_ink_1177-stone-clear: rgba(128, 130, 133, 1);
+  --rsds_ref_ink_1177-stone-line: rgba(218, 219, 220, 1);
+  --rsds_ref_ink_1177-stone-background: rgba(241, 242, 242, 1);
+}
+

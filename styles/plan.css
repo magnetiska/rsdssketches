@@ -1,0 +1,46 @@
+/*
+
+src/
+├── css/
+│   ├── tokens/                  <-- DATA LAYER (Variables only)
+│   │   ├── primitives/
+│   │   │   ├── layout.css       <-- Grid column counts, breakpoints, max-widths
+│   │   │   ├── layout.css       <-- Grid column counts, breakpoints, max-widths
+│   │   │   ├── colors.css       <-- Color definitionts
+│   │   │   └── ...
+│   │   ├── semantics/
+│   │   │   ├── layout.css       <-- Sidebar widths, container max-widths
+│   │   │   └── colors.css...
+│   │   └── main.css
+│   │
+│   ├── layouts/                 <-- STRUCTURE LAYER (CSS Rulesets)
+│   │   ├── grid.css             <-- Actual .grid definitions
+│   │   ├── sidebar.css          <-- Actual .sidebar-layout definitions
+│   │   └── container.css        <-- Actual .page-container definitions
+│   │
+│   ├── components/              <-- UI LAYER (.card, .button, etc.)
+│   └── main.css                 <-- Global Entry Point
+
+
+tokens/
+├── primitives/
+│   ├── color-palette.css
+│   ├── text-scale.css
+│   └── layout-grid.css
+├── semantics/
+│   ├── color-system.css       <-- Clean, clear, and structural
+│   ├── text-system.css
+│   └── layout-system.css
+└── main.css
+*/
+
+/*
+Step 1: The Reference Layer (The Ingredients)
+tokens/primitives/text-scale.css
+
+Step 2: The System Layer (The Architecture)
+tokens/semantics/text-system.css
+
+Step 3: Production Usage
+Your component code is now fully namespace-protected. If a reviewer spots a variable starting with --rsds_ref- inside a component stylesheet, it can instantly be caught and rejected
+*/

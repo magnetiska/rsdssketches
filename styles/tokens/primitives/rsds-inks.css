@@ -1,0 +1,23 @@
+:root {
+
+
+  /* Extendend palette */
+  --rsds_ref_ink_saphire--480: oklch(52% 0.166 256);
+  --rsds_ref_ink_saphire--325: oklch(67.5% 0.167 256);
+
+  /* RSDS Grey scale */
+
+  --rsds_ref_ink_black: rgba(0, 0, 0, 1);
+  --rsds_ref_ink_white: oklch(1 0 0);
+  --rsds_ref_ink_transparent: rgba(0, 0, 0, 0);
+  --rsds_ref_ink_grey--50: oklch(95% 0 0);
+  --rsds_ref_ink_grey--100: oklch(90% 0 0);
+  --rsds_ref_ink_grey--300: oklch(30% 0 0);
+  --rsds_ref_ink_grey--400: oklch(40% 0 0);
+
+
+  --rsds_ref_ink_darken--50: oklch(0 0 0 / 0.07); /* strange percentage, but correct*/
+  --rsds_ref_ink_darken--100: oklch(0 0 0 / 0.13); /* strange percentage, but correct*/
+  --rsds_ref_ink_lighten--300: oklch(100% 0 0 / 0.18);  /* strange percentage, but correct*/
+  --rsds_ref_ink_lighten--400: oklch(100% 0 0 / 0.28); /* strange percentage, but correct*/
+}

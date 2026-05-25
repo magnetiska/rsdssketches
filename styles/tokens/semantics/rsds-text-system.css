@@ -1,0 +1,11 @@
+
+:root {
+    --rsds_font-size: 1rem;
+    --rsds_font-family: var(--rsds_ref_font-family_main);
+
+    /* buttons */
+    --rsds_font-size_button: var(--rsds_ref_font-size_base); 
+    --rsds_line-height_button: var(--rsds_ref_line-height_base); 
+    --rsds_font-weight_button: var(--rsds_ref_font-weight_bold);
+
+}

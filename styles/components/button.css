@@ -1,0 +1,53 @@
+.rsds-button {
+    font-weight: var(--rsds_font-weight_button);
+    font-family: var(--rsds_font-family);
+    font-size: var(--rsds_font-size_button);
+    line-height: var(--rsds_line-height_button);
+    background-color: var(--rsds_background-color_button);
+    color: var(--rsds_color_button);
+    border: var(--rsds_border-width_strong) solid var(--rsds_border-color_button);
+    border-radius: var(--rsds_border-radius_pill);
+    padding-block: var(--rsds_padding_m--inside-border-width_strong);
+    padding-inline: var(--rsds_padding_l--inside-border-width_strong);
+
+    &:hover {
+        background-color: var(--rsds_background-color--hover_button);
+    }
+
+    &:active {
+        background-color: var(--rsds_background-color--active_button);
+    }
+
+
+    &:focus-visible {
+        outline:var(--rsds_outline-width) solid var(--rsds_outline-color--focus);
+        outline-offset: var(--rsds_outline-offset);
+    }
+}
+
+.rsds-button--ghost {
+    
+    font-weight: var(--rsds_font-weight_button);
+    font-family: var(--rsds_font-family);
+    font-size: var(--rsds_font-size_button);
+    line-height: var(--rsds_line-height_button);
+    background-color: var(--rsds_background-color_button--ghost);
+    color: var(--rsds_color_button--ghost);
+    border: var(--rsds_border-width_strong) solid var(--rsds_border-color_button--ghost);
+    border-radius: var(--rsds_border-radius_pill);
+    padding-block: var(--rsds_padding_m--inside-border-width_strong);
+    padding-inline: var(--rsds_padding_l--inside-border-width_strong);
+
+    &:hover {
+        background-color: var(--rsds_background-color--hover_button--ghost);
+    }
+
+    &:active {
+        background-color: var(--rsds_background-color--active_button--ghost);
+    }
+
+    &:focus-visible {
+        outline:var(--rsds_outline-width) solid var(--rsds_outline-color--focus);
+        outline-offset: var(--rsds_outline-offset);
+    }
+}

@@ -1,13 +1,46 @@
-@import url("rsds-colors.css");
+/* main.css (Your Global Entry Point) */
+
+/* 
+==========================================
+  1. DESIGN TOKENS (Variables Only)
+========================================== */
+/* First, load raw ingredients */
+@import "tokens/primitives/rsds-inks.css";
+@import "tokens/primitives/rsds-spacing-scale.css";
+@import "tokens/primitives/rsds-typography-scale.css";
+
+/* Next, map them to functional roles */
+@import "tokens/semantics/rsds-color-system.css";
+@import "tokens/semantics/rsds-layout-system.css";
+@import "tokens/semantics/rsds-text-system.css";
+/*
+@import "./tokens/semantics/typography.css";
+@import "./tokens/semantics/spacing.css";
+@import "./tokens/semantics/layout.css";
+*/
+/* ==========================================
+   2. APPLICATION STYLES (Operational CSS)
+   ========================================== */
+@import "components/button.css";  /* Individual UI components */
+
+/* @import url("rsds-colors.css");
 @import url("rsds-layout.css");
 @import url("rsds-typography.css");
+*/
 
 :root {
 }
+.wrapper {border:20px solid gold;}
+.special {padding:3rem;margin-block:1.5rem;
+  background: oklch(97% 0.041 92);
+  background: oklch(97% 0.041 216);
+  background: oklch(30% 0.053 216);
+}
 body {
-  color: var(--rsds-ct-foreground);
-  background: var(--rsds-ct-background);
+  color: var(--rsds_color);
+  background: var(--rsds_background-color);
   margin: 0;
+  font-family: var(--rsds_font-family);
 }
 
 .grid--s1 {

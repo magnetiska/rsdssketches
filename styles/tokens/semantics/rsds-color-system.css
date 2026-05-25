@@ -1,0 +1,29 @@
+
+:root {
+    color-scheme: light dark;
+
+    --rsds_color: light-dark(var(--rsds_ref_ink_black), var(--rsds_ref_ink_white));
+    --rsds_background-color: light-dark(var(--rsds_ref_ink_white), var(--rsds_ref_ink_black));
+
+    /* outline */
+    --rsds_outline-color--focus: light-dark(var(--rsds_ref_ink_saphire--480), var(--rsds_ref_ink_saphire--325));
+   /* hover */
+    --rsds_background-color--hover: light-dark(var(--rsds_ref_ink_grey--50), var(--rsds_ref_ink_grey--300));
+    --rsds_background-color--active: light-dark(var(--rsds_ref_ink_grey--100), var(--rsds_ref_ink_grey--400));
+  
+   /* button */
+   --rsds_color_button: light-dark(var(--rsds_ref_ink_black), var(--rsds_ref_ink_white));
+   --rsds_border-color_button: light-dark(var(--rsds_ref_ink_black), var(--rsds_ref_ink_white));
+   --rsds_background-color_button: light-dark(var(--rsds_ref_ink_white), var(--rsds_ref_ink_black));
+   --rsds_background-color--hover_button: var(--rsds_background-color--hover); /* Inherits basic hover for now */
+   --rsds_background-color--active_button: var(--rsds_background-color--active); /* Inherits basic active for now */
+
+      /* button--ghost */
+   --rsds_color_button--ghost: light-dark(var(--rsds_ref_ink_black), var(--rsds_ref_ink_white));
+   --rsds_border-color_button--ghost: none;
+   --rsds_background-color_button--ghost: none;
+   --rsds_background-color--hover_button--ghost: light-dark(var(--rsds_ref_ink_darken--50), var(--rsds_ref_ink_lighten--300)); /* Inherits basic hover for now */
+   --rsds_background-color--active_button--ghost: light-dark(var(--rsds_ref_ink_darken--100), var(--rsds_ref_ink_lighten--400));
+
+
+}

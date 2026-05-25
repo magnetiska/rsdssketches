@@ -1,0 +1,11 @@
+
+/* spacing scale */
+:root {
+    --rsds_ref_min1: max(1px, .0625rem);
+    --rsds_ref_min2: max(2px, .125rem);
+
+    --rsds_ref_space_m: 0.75rem;
+    --rsds_ref_space_l: 1.5rem;
+    --rsds_ref_border-radius_infinite: 9999vmax;
+}
+

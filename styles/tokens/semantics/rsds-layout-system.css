@@ -1,0 +1,25 @@
+/* borders */
+:root {
+    --rsds_border-width_normal: var(--rsds_ref_min1);
+    --rsds_border-width_strong: var(--rsds_ref_min2);
+
+    --rsds_outline-width: var(--rsds_ref_min2);
+    --rsds_outline-offset: var(--rsds_ref_min2);
+
+    --rsds_border-radius_pill: var(--rsds_ref_border-radius_infinite);
+}
+
+/* paddings */
+
+:root {
+    --rsds_padding_m: var(--rsds_ref_space_m);
+    --rsds_padding_l: var(--rsds_ref_space_l);
+
+    /* paddings that compensate for border-widths */
+    --rsds_padding_m--inside-border-width_normal: calc(var(--rsds_padding_m) - var(--rsds_border-width_normal));
+    --rsds_padding_l--inside-border-width_normal: calc(var(--rsds_padding_l) - var(--rsds_border-width_normal));
+    --rsds_padding_m--inside-border-width_strong: calc(var(--rsds_padding_m) - var(--rsds_border-width_strong));
+    --rsds_padding_l--inside-border-width_strong: calc(var(--rsds_padding_l) - var(--rsds_border-width_strong));
+
+}
+
