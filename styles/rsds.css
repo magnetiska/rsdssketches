@@ -32,13 +32,11 @@
 }
 .wrapper {border:20px solid gold;}
 .special {padding:3rem;margin-block:1.5rem;
-  background: oklch(97% 0.041 92);
-  background: oklch(97% 0.041 216);
-  background: oklch(30% 0.053 216);
+  background: light-dark(oklch(97% 0.041 216), oklch(30% 0.053 216));
 }
 body {
   color: var(--rsds_color);
-  background: var(--rsds_background-color);
+  background-color: var(--rsds_background-color);
   margin: 0;
   font-family: var(--rsds_font-family);
 }
